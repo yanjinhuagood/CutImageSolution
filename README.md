@@ -6,4 +6,4 @@
 <br/>
 
 <h3>效果</h3>
-<img src="/CutImageSolution/resources/01.gif"/>
+<img src="/CutImageSolution/resources/1.gif"/>
