@@ -60,14 +60,14 @@ namespace CutImage
             return new System.Drawing.Rectangle((int)Canvas.GetLeft(this), (int)Canvas.GetTop(this), (int)this.ActualWidth, (int)this.ActualHeight);
         }
 
-        public void Init(int left, int top, int width, int height)
-        {
-            Canvas.SetLeft(this, left);
-            Canvas.SetTop(this, top);
+        //public void Init(int left, int top, int width, int height)
+        //{
+        //    Canvas.SetLeft(this, left);
+        //    Canvas.SetTop(this, top);
 
-            this.Width = width;
-            this.Height = height;
-        }
+        //    this.Width = width;
+        //    this.Height = height;
+        //}
 
         #region 中间拖动
         private void OnDragDeltaHandler(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
@@ -93,8 +93,6 @@ namespace CutImage
         #region 右下点拖动
         private void OnRightBottomDragDeltaHandler(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
         {
-            if ((this.Height + e.VerticalChange) > 120) return;
-
             if (this.Width + e.HorizontalChange > 0) this.Width += e.HorizontalChange;
             double left = Canvas.GetLeft(this);
             if (left + this.Width > this.ParentMaxWidth)

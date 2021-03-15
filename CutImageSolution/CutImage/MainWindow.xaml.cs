@@ -38,11 +38,10 @@ namespace CutImage
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
-            dlg.FileName = "123.jpg"; // Default file name
-            dlg.DefaultExt = ".jpg"; // Default file extension
-            dlg.Filter = "image file|*.jpg"; // Filter files by extension
+            dlg.FileName = "123.jpg"; 
+            dlg.DefaultExt = ".jpg"; 
+            dlg.Filter = "image file|*.jpg"; 
 
-            // Process save file dialog box results
             if (dlg.ShowDialog() == true)
             {
                 bitmap.Save(dlg.FileName);
@@ -207,11 +206,5 @@ namespace CutImage
         }
     }
 }
-public class ImageSizeInfo
-{
-    public string SizeType { get; set; }
-    public string SizeText { get; set; }
-    public int Width { get; set; }
-    public int Height { get; set; }
-}
+
 
