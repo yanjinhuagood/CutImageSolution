@@ -54,7 +54,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CutImageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DragDropView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageCutCustoms.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -66,8 +74,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CutImageView.xaml.cs">
+      <DependentUpon>CutImageView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DragDropView.xaml.cs">
       <DependentUpon>DragDropView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageCutCustoms.xaml.cs">
+      <DependentUpon>ImageCutCustoms.xaml</DependentUpon>
     </Compile>
     <Compile Include="ImageCutView.xaml.cs">
       <DependentUpon>ImageCutView.xaml</DependentUpon>
